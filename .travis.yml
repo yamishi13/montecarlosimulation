@@ -3,4 +3,4 @@ jdk:
   - oraclejdk8
   - openjdk7
 sudo: false
-script: mvn clean verify install run -f MonteCarloSimulation
+script: mvn clean compile test-compile test verify -f MonteCarloSimulation
