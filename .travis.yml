@@ -1,7 +1,6 @@
 language: java
 jdk:
   - oraclejdk8
-  - openjdk7
 sudo: required
 install: bash -x install_dependencies.sh
 script: bash -x compile.sh
