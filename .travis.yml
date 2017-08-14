@@ -3,6 +3,6 @@ jdk:
   - oraclejdk8
   - openjdk7
 sudo: false
-install: pwd && bash -x setup.sh
+install: bash -x install_dependencies.sh
 script: bash -x compile.sh
 after_success: bash -x checks.sh && bash -x test.sh
