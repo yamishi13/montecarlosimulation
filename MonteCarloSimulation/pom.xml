@@ -15,4 +15,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
+    <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <configuration>
+             <mainClass>com.yamishi.montecarlosimulation.App</mainClass>
+        </configuration>
+        </plugin>
+  </build>
 </project>
