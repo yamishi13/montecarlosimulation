@@ -3,4 +3,6 @@ jdk:
   - oraclejdk8
   - openjdk7
 sudo: false
-script: mvn clean compile test-compile test verify exec:java -f MonteCarloSimulation
+install: bash setup.sh
+script: bash compile.sh
+after_success: bash checks.sh && bash test.sh
