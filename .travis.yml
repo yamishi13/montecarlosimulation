@@ -3,6 +3,6 @@ jdk:
   - oraclejdk8
   - openjdk7
 sudo: false
-install: bash setup.sh
-script: bash compile.sh
-after_success: bash checks.sh && bash test.sh
+install: bash -x setup.sh
+script: bash -x compile.sh
+after_success: bash -x checks.sh && bash -x test.sh
